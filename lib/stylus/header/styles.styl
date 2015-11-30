@@ -1,0 +1,58 @@
+.header
+    background-color rgba(175, 16, 20,.4)
+    width 100%
+    height 11.4rem
+    overflow hidden
+    position relative
+    box-sizing border-box
+    &__div
+        position absolute
+        top 0
+        left 0
+        right 0
+        height 11.4rem
+        &__figure
+            margin 1rem auto
+            position relative
+            width 70%
+            height 60px
+        &__title
+            font-weight normal
+            text-align center
+            font-size 1.6rem
+            font-family edinaFont
+            color paletteFontColor
+            margin 0 auto
+            wdith 80%
+        &__logo
+            top 0
+            bottom 0
+            left 0
+            right 0
+            position absolute
+            max-width 90%
+            max-height 90%
+            margin auto
+
+@media (min-width 21rem)
+    .header
+        height 6rem
+        &__div
+            height 6rem
+            display flex
+            flex-wrap nowrap
+            &__figure
+                margin 1rem auto
+                width 20%
+                height 60px
+            &__title
+                line-height 6rem
+                text-align left
+                width 80%
+                margin 0
+
+@media (min-width 34rem)
+    .header
+        &__div
+            &__title
+                font-size 2rem
